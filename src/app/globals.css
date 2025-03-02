@@ -24,5 +24,15 @@ body {
 }
 
 .botao{
-  @apply bg-amber-300;
+  @apply flex justify-center items-center gap-2;
+  @apply px-6 py-2.5 rounded-md;
+}
+
+.botao.azul{
+  @apply bg-blue-500 hover:bg-blue-600;
+  @apply text-white
+}
+.botao.vermelho{
+  @apply bg-red-500 hover:bg-red-600;
+  @apply text-white
 }
