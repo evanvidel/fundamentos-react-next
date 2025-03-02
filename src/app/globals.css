@@ -36,3 +36,20 @@ body {
   @apply bg-red-500 hover:bg-red-600;
   @apply text-white
 }
+
+.container {
+  @apply flex flex-col justify-center items-center;
+  @apply h-screen;
+}
+
+.exemplo{
+  @apply bg-zinc-900  rounded-lg;
+  @apply overflow-hidden
+}
+.exemplo h1{
+  @apply text-3xl font-black;
+  @apply px-10 py-5 bg-zinc-800;
+}
+.exemplo div{
+  @apply flex flex-col p-5 text-xl;
+}
