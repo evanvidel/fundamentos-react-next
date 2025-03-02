@@ -42,14 +42,14 @@ body {
   @apply h-screen;
 }
 
-.exemplo{
+.exercicio{
   @apply bg-zinc-900  rounded-lg;
   @apply overflow-hidden
 }
-.exemplo h1{
+.exercicio h1{
   @apply text-3xl font-black;
   @apply px-10 py-5 bg-zinc-800;
 }
-.exemplo div{
+.exercicio .conteudo{
   @apply flex flex-col p-5 text-xl;
 }
