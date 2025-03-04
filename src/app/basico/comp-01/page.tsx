@@ -1,6 +1,6 @@
-import Aprovado from "@/components/Aprovado";
+import Aprovado from "@/components/exercicios/Aprovado";
 
-export default function ExemploJSX04() {
+export default function CriandoComponentes01() {
   const listaDeAprovados = ['Rebeca', 'Guilherme', 'Maria', 'Thiago', 'Pedro'];
 
   return (
