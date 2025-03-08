@@ -29,17 +29,17 @@ export default function Pagina(props: PaginaProps) {
             />
             <MenuItem
               icone={IconCode}
-              link="/basico/jsx-01"
+              link="/basico/jsx-02"
               texto="Entendendo o JSX #02"
             />
             <MenuItem
               icone={IconCode}
-              link="/basico/jsx-01"
+              link="/basico/jsx-03"
               texto="Entendendo o JSX #03"
             />
             <MenuItem
               icone={IconCode}
-              link="/basico/jsx-01"
+              link="/basico/jsx-04"
               texto="Entendendo o JSX #04"
             />
             <MenuItem
@@ -49,7 +49,7 @@ export default function Pagina(props: PaginaProps) {
             />
             <MenuItem
               icone={IconComponents}
-              link="/basico/comp-01"
+              link="/basico/comp-02"
               texto="Componentes #02"
             />
           </Menu>
