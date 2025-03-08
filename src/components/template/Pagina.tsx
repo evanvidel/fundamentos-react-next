@@ -1,9 +1,15 @@
-import { IconCode, IconComponents, IconHome, IconSquare1 } from '@tabler/icons-react';
+import {
+  IconCode,
+  IconComponents,
+  IconHome,
+  IconSquare1,
+} from '@tabler/icons-react';
 import AreaLateral from './AreaLateral';
 import Cabecalho from './Cabecalho';
 import Menu from './Menu';
 import MenuItem from './MenuItem';
 import Rodape from './Rodape';
+import MenuLabel from './MenuLabel';
 
 export interface PaginaProps {
   children: any;
@@ -16,6 +22,7 @@ export default function Pagina(props: PaginaProps) {
       <div className="flex flex-1">
         <AreaLateral>
           <Menu>
+            <MenuLabel>Componentes</MenuLabel>
             <MenuItem icone={IconHome} link="/" texto="Início" />
             <MenuItem
               icone={IconSquare1}
@@ -52,6 +59,7 @@ export default function Pagina(props: PaginaProps) {
               link="/basico/comp-01"
               texto="Componentes #02"
             />
+            <MenuLabel>Árvore de Componentes</MenuLabel>
           </Menu>
         </AreaLateral>
 
