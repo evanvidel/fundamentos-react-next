@@ -1,15 +1,63 @@
-import Cabecalho from "./Cabecalho"
+import { IconCode, IconComponents, IconHome, IconSquare1 } from '@tabler/icons-react';
+import AreaLateral from './AreaLateral';
+import Cabecalho from './Cabecalho';
+import Menu from './Menu';
+import MenuItem from './MenuItem';
+import Rodape from './Rodape';
 
-export interface PaginaProps{
-    children: any
+export interface PaginaProps {
+  children: any;
 }
 
 export default function Pagina(props: PaginaProps) {
   return (
-    <div>
-        <Cabecalho />
-        <span>Pagina</span>
-        <span>{props.children}</span>
+    <div className="flex flex-col min-h-screen ">
+      <Cabecalho />
+      <div className="flex flex-1">
+        <AreaLateral>
+          <Menu>
+            <MenuItem icone={IconHome} link="/" texto="Início" />
+            <MenuItem
+              icone={IconSquare1}
+              link="/basico/primeiro"
+              texto="Primeiro Componente"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-01"
+              texto="Entendendo o JSX #01"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-01"
+              texto="Entendendo o JSX #02"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-01"
+              texto="Entendendo o JSX #03"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-01"
+              texto="Entendendo o JSX #04"
+            />
+            <MenuItem
+              icone={IconComponents}
+              link="/basico/comp-01"
+              texto="Componentes #01"
+            />
+            <MenuItem
+              icone={IconComponents}
+              link="/basico/comp-01"
+              texto="Componentes #02"
+            />
+          </Menu>
+        </AreaLateral>
+
+        <main className="p-6">{props.children}</main>
+      </div>
+      <Rodape />
     </div>
-  )
+  );
 }
