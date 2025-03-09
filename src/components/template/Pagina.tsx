@@ -3,6 +3,8 @@ import {
   IconCode,
   IconComponents,
   IconHome,
+  IconNumber,
+  IconNumbers,
   IconSquare1,
 } from '@tabler/icons-react';
 import AreaLateral from './AreaLateral';
@@ -67,6 +69,12 @@ export default function Pagina(props: PaginaProps) {
               texto="Comunicação Direta"
             />
           </Menu>
+          <MenuLabel>Gerenciamento de Estado</MenuLabel>
+          <MenuItem
+              icone={IconNumbers}
+              link="/estado/basico-01"
+              texto="usando Estado #01"
+            />
         </AreaLateral>
 
         <main className="p-6">{props.children}</main>
