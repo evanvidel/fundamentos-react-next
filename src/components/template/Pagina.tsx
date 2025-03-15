@@ -1,11 +1,13 @@
 import {
   IconArrowDown,
+  IconArrowUp,
   IconCode,
   IconComponents,
   IconHome,
   IconNumber,
   IconNumbers,
   IconSquare1,
+  IconUser,
 } from '@tabler/icons-react';
 import AreaLateral from './AreaLateral';
 import Cabecalho from './Cabecalho';
@@ -67,6 +69,16 @@ export default function Pagina(props: PaginaProps) {
               icone={IconArrowDown}
               link="/arvore/direta"
               texto="Comunicação Direta"
+            />
+            <MenuItem
+              icone={IconArrowUp}
+              link="/arvore/indireta"
+              texto="Comunicação Indireta"
+            />
+            <MenuItem
+              icone={IconUser}
+              link="/arvore/crud"
+              texto="Cadastro Usuário"
             />
           </Menu>
           <MenuLabel>Gerenciamento de Estado</MenuLabel>
